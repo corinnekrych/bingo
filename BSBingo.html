@@ -11,15 +11,9 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-<link rel="apple-touch-icon" href="bingo_icon.png"/>
-
-<link rel="apple-touch-startup-image" href="startup.png" />
 
 
-<title>BS Bingo</title>
-<script src="modernizr-1.6.min.js"></script>
-<script src="TextButton.js"></script>
-<script src="ConsoleLog.js"></script>
+<title>Bullshit Bingo!</title>
 <script src="Bingo.js"></script>
 <script type="text/javascript">
 
@@ -29,39 +23,37 @@ $('#menu').live('pageinit', function(e) {
 
 $('#playing_game').live('pageshow', function(e) {
     bingo = new Bingo();
-  });
+});
 
 
 </script> 
 </head>
 <body>
 <!-- Start Game -->
-<div data-theme="e" data-role="page" id="menu">
+<div data-add-back-btn="true" data-theme="e" data-role="page" id="menu">
   	<div data-theme="a" data-role="header">
     	<h3>Corporate Bingo</h3>
     </div>
     <div data-role="content">
-			<a id="playLink" href="#playing_game" data-theme="b" data-role="button">Start</a>
-			<a href="#new_deck" data-theme="b" data-role="button">New Deck</a>
-			<a href="#settings" data-theme="b" data-role="button">Settings</a>
-			<a href="#help" data-theme="b" data-role="button">Help</a>
+			<a href="#playing_game" data-theme="b" data-role="button">Play</a>
+			<a href="#help_rules" data-theme="b" data-role="button">Help</a>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
-      <a class="ui-btn-left" rel="external" href="https://github.com/3musket33rs">
-        <img src="resources/img/github-icon.png" />
+      <a class="ui-btn-left" rel="external" href="https://github.com/corinnekrych/bingo">
+        <img src="github-icon.png" />
       </a>
       <h1>
-        Powered by (
+        Powered by <br>(
         <a href="mailto:corinnekrych@gmail.com">corinnekrych@gmail.com</a>
         )
       </h1>
       <a class="ui-btn-right" rel="external" href="https://twitter.com/corinnekrych">
-        <img src="resources/img/twitter.png" />
+        <img src="twitter.png" />
       </a>
     </div>
 </div>
 
-<div data-theme="e" data-role="page" id="playing_game">
+<div data-add-back-btn="true" data-theme="e" data-role="page" id="playing_game">
   	<div data-theme="a" data-role="header">
     	<h3>Corporate Bingo</h3>
     </div>
@@ -71,49 +63,64 @@ $('#playing_game').live('pageshow', function(e) {
     <a id='bingoDialog' href="#dialog" data-rel="dialog" data-transition="pop" style='display:none;'></a>
     </div>
     <div data-theme="a" data-role="footer" data-position="fixed">
-      <a class="ui-btn-left" rel="external" href="https://github.com/3musket33rs">
-        <img src="resources/img/github-icon.png" />
+      <a class="ui-btn-left" rel="external" href="https://github.com/corinnekrych/bingo">
+        <img src="github-icon.png" />
       </a>
       <h1>
-        Powered by (
+        Powered by <br> (
         <a href="mailto:corinnekrych@gmail.com">corinnekrych@gmail.com</a>
         )
       </h1>
       <a class="ui-btn-right" rel="external" href="https://twitter.com/corinnekrych">
-        <img src="resources/img/twitter.png" />
+        <img src="twitter.png" />
       </a>
     </div>
 </div>
   <!-- /page popup -->
-  <div data-role="page" id="dialog">
+<div data-role="page" id="dialog">
     <div data-role="header" data-theme="b">
       <h1>BullShit Bingo!</h1>
     </div>
     <!-- /header -->
     <div data-role="content" data-theme="e">
-      <h2>Still awake?</h2>
-      <ul>
-        <li>yawning?</li>
-        <li>closing your eyes?</li>
-        <li>time to WAKE UP</li>
-        <li>and yell BULLSHIT</li>
-      </ul>
-      <a href="#playing_game?reset" data-theme="b" data-role="button">Start</a>
-      <a href="#new_deck" data-theme="b" data-role="button">New Deck</a>
-      <a href="#settings" data-theme="b" data-role="button">Settings</a>
-      <a href="#help" data-theme="b" data-role="button">Help</a>
-    </div>
-    <div data-role="footer" data-theme="b">
+      <h2>Time to WAKE UP</h2>
+      <h3>and yell BULLSHIT!<h3>
+      <a href="#playing_game" data-theme="b" data-role="button">Play again</a>
       <h4>Congrats you've made it</h4>
-    </div>
   </div>
-<div data-role="page" id="new_deck">
 </div>
 
-<div data-role="page" id="settings">
-</div>
 
-<div data-role="page" id="help">
+<div data-add-back-btn="true" data-theme="e" data-role="page" id="help_rules">
+  <div data-theme="a" data-role="header">
+    <h3>Corporate Bingo</h3>
+  </div>
+  <div data-role="content">
+    <h1>BullShit Bingo! The Rules</h1>
+    <p>So you're a meeting and you're bored. It's a real problem not to fall asleep. Thanks to this little HTML5 (JQuery Mobile powered) web apps, we find a solution for you.</p>
+
+    <p>A way to keep you listening somehow.</p>
+
+    <p>All you need is you phone and a couple of co-workers to share the fun with you and of course a (boring) meeting with a chairman. Obviously the chairman shouldn't be informed he is the main actor of the game. Try to keep it quite. At least at the beginning...</p>
+
+    <p>You all start the app together as the meetings starts. Each of you will have an ramdomly fed card which contains 5x5 grid filled with keywords. As the chairman (you could also extend to all non-informed attendees) pronounces a keyword, check it in. You win with either a full raw or a full colunm in your grid. BUT, you've got to be the first and not to forget to stand up and yell <b>BULLSHIT!</b>, otherwise your win will be invalidated.</p>
+
+    <p>Easy peasy? </p>
+    <p>Go! Don't be shy, give it a trial.</p>
+  </div>
+     <div data-theme="a" data-role="footer" data-position="fixed">
+      <a class="ui-btn-left" rel="external" href="https://github.com/corinnekrych/bingo">
+        <img src="github-icon.png" />
+      </a>
+      <h1>
+        Powered by <br>(
+        <a href="mailto:corinnekrych@gmail.com">corinnekrych@gmail.com</a>
+        )
+      </h1>
+      <a class="ui-btn-right" rel="external" href="https://twitter.com/corinnekrych">
+        <img src="twitter.png" />
+      </a>
+    </div>
 </div>
 
 
