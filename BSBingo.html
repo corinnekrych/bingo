@@ -23,21 +23,13 @@
 <script src="Bingo.js"></script>
 <script type="text/javascript">
 
-  var words = ['Quick Win', 'Tactical solution', 'Resources', 'Budget', 'Unit Tests', 'Testability', 'Delivery', 'Scrum', 'Agile', 'Release', 'Short Term', 'Architecture', 'Rebase', 'Stream', 'Componentization', 'Clear Case', 'Platfrom', 'Quality', 'Sprint', 'Product Owner', 'Scrum Master', 'Specifications', 'Strategic', 'Build', 'Blocking'];
-
 $('#menu').live('pageinit', function(e) {
-	// var words = ['Quick Win', 'Tactical solution', 'Resources', 'Budget', 'Unit Tests', 'Testability', 'Delivery', 'Scrum', 'Agile', 'Release', 'Short Term', 'Architecture', 'Rebase', 'Stream', 'Componentization', 'Clear Case', 'Platfrom', 'Quality', 'Sprint', 'Product Owner', 'Scrum Master', 'Specifications', 'Strategic', 'Build', 'Blocking'];
-	bingo = new Bingo(words);
-
-
-
+	bingo = new Bingo();
 });
-// $('#playLink').live('click',
-//     function(e) {
-//         bingo = new Bingo(words);
-//         $('#grid').listview('refresh')
-//     }
-// )
+
+$('#playing_game').live('pageshow', function(e) {
+    bingo = new Bingo();
+  });
 
 
 </script> 

@@ -1,14 +1,12 @@
+
 function Bingo(phrases, buttonTheme){
     this.buttonTheme = buttonTheme;
-    this.phrases = phrases;
-
+    this.phrases = ['Quick Win', 'Tactical solution', 'Resources', 'Budget', 'Unit Tests', 'Testability', 'Delivery', 'Scrum', 'Agile', 'Release', 'Short Term', 'Architecture', 'Rebase', 'Stream', 'Componentization', 'Clear Case', 'Platform', 'Quality', 'Sprint', 'Product Owner', 'Scrum Master', 'Specifications', 'Strategic', 'Build', 'Blocking'];
     this.init();
-
-    
-
 };
 
 Bingo.prototype.init = function() {
+	$("#grid").empty();
 	this.card = this.randomFeed();
 	var out = '';
 	for (var i = 0 ; i <this.card.length; i++) {
@@ -57,7 +55,4 @@ Bingo.prototype.areYouAboutToYellBullShit = function(arg1, arg2) {
 	}
 
 	return false;
-
-
-
 };
