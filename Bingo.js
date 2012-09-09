@@ -20,7 +20,31 @@
 */
 function Bingo(phrases, buttonTheme){
     this.buttonTheme = buttonTheme;
-    this.phrases = ['Quick Win', 'Tactical solution', 'Resources', 'Budget', 'Unit Tests', 'Testability', 'Delivery', 'Scrum', 'Agile', 'Release', 'Short Term', 'Architecture', 'Rebase', 'Stream', 'Componentization', 'Clear Case', 'Platform', 'Quality', 'Sprint', 'Product Owner', 'Scrum Master', 'Specifications', 'Strategic', 'Build', 'Blocking'];
+    this.phrases = ['Quick Win', 
+    				'Tactical\n Solution', 
+    				'Resources', 
+    				'Budget', 
+    				'Patch', 
+    				'QA', 
+    				'Delivery', 
+    				'Scrum', 
+    				'Agile', 
+    				'Release', 
+    				'Short Term', 
+    				'Merge\n Conflicts', 
+    				'Rebase', 
+    				'Stream', 
+    				'POM', 
+    				'Clear Case', 
+    				'Platform', 
+    				'Quality', 
+    				'Sprint', 
+    				'Product\n Owner', 
+    				'Scrum\n Master', 
+    				'Specifications', 
+    				'Strategic', 
+    				'Build', 
+    				'Blocking'];
     this.init();
 };
 
