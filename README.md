@@ -1,7 +1,7 @@
 Bullshit Bingo
 ==============
 
-So you're a meeting and you're bored. It's a real problem not to fall asleep. Thanks to this little HTML5 (JQuery Mobile powered) web apps, we find a solution for you.
+So you're in a meeting and you're bored. It's a real problem not to fall asleep. Thanks to this little HTML5 (JQuery Mobile powered) web apps, we find a solution for you.
 
 A way to keep you listening somehow.
 
