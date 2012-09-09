@@ -20,31 +20,31 @@
 */
 function Bingo(phrases, buttonTheme){
     this.buttonTheme = buttonTheme;
-    this.phrases = ['Quick Win', 
-    				'Tactical\n Solution', 
-    				'Resources', 
-    				'Budget', 
-    				'Patch', 
+    this.phrases = ['quick win', 
+    				'tactical\n solution', 
+    				'resources', 
+    				'budget', 
+    				'patch', 
     				'QA', 
-    				'Delivery', 
-    				'Scrum', 
-    				'Agile', 
-    				'Release', 
-    				'Short Term', 
-    				'Merge\n Conflicts', 
-    				'Rebase', 
-    				'Stream', 
+    				'delivery', 
+    				'scrum', 
+    				'agile', 
+    				'release', 
+    				'short term', 
+    				'merge\n conflict', 
+    				'rebase', 
+    				'stream', 
     				'POM', 
-    				'Clear Case', 
-    				'Platform', 
-    				'Quality', 
-    				'Sprint', 
-    				'Product\n Owner', 
-    				'Scrum\n Master', 
-    				'Specifications', 
-    				'Strategic', 
-    				'Build', 
-    				'Blocking'];
+    				'clear case', 
+    				'platform', 
+    				'quality', 
+    				'sprint', 
+    				'product\n owner', 
+    				'scrum\n master', 
+    				'specs', 
+    				'strategic', 
+    				'build', 
+    				'blocking'];
     this.init();
 };
 
@@ -64,7 +64,7 @@ Bingo.prototype.init = function() {
 			line++;
 		}
 		var charTheme = String.fromCharCode(97 + modulo);
-		out = out + '<div id="item_' + i + '" class="line-'+ line +' ui-block-'+ charTheme +'"><div class="ui-bar ui-bar-e" style="height:60px"><br>'+ this.card[i].label+'</div></div>';
+		out = out + '<div id="item_' + i + '" class="line-'+ line +' ui-block-'+ charTheme +'"><div class="ui-bar ui-bar-e" style="padding: .4em 2px;text-align : left;height:50px"><br>'+ this.card[i].label+'</div></div>';
 	};
 	$("#grid").append(out);
 
